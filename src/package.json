@@ -1,0 +1,19 @@
+{
+  "name": "bootstrapper-node-api",
+  "version": "1.0.0",
+  "description": "Boostrapper that creates a server using express to test CICDs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macreiben-dev/bootstrapper-node-api.git"
+  },
+  "author": "Christian Finel",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/macreiben-dev/bootstrapper-node-api/issues"
+  },
+  "homepage": "https://github.com/macreiben-dev/bootstrapper-node-api#readme"
+}
