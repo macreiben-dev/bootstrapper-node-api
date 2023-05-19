@@ -1,10 +1,12 @@
 {
   "name": "bootstrapper-node-api",
   "version": "1.0.0",
+  "type": "module",
   "description": "Boostrapper that creates a server using express to test CICDs.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,16 @@
   "bugs": {
     "url": "https://github.com/macreiben-dev/bootstrapper-node-api/issues"
   },
-  "homepage": "https://github.com/macreiben-dev/bootstrapper-node-api#readme"
+  "homepage": "https://github.com/macreiben-dev/bootstrapper-node-api#readme",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-node": "^0.0.1-security",
+    "express": "^4.18.2"
+  }
 }
