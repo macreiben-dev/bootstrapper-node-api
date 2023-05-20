@@ -1,0 +1,8 @@
+{
+    "jest.autoRun": {
+        "watch": true
+    },
+    "jest.showCoverageOnLoad": true,
+    "jest.rootPath": "src",
+    "jest.jestCommandLine": "npm run test --"
+}
