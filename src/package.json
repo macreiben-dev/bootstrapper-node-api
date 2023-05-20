@@ -25,6 +25,7 @@
   },
   "jest": {
     "collectCoverage": true,
+    "coverageDirectory": "coverage",
     "coverageReporters": [
       "text",
       "lcov"
@@ -34,8 +35,7 @@
     ],
     "coveragePathIgnorePatterns": [
       "/coverage/"
-    ],
-    "coverageDirectory": "coverage"
+    ]
   },
   "dependencies": {
     "@babel/core": "^7.21.8",
