@@ -28,7 +28,7 @@
   },
   "jest": {
     "collectCoverage": true,
-    "coverageDirectory": "coverage",
+    "coverageDirectory": "../coverage",
     "coverageReporters": [
       "text",
       "lcov"
