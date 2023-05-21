@@ -20,10 +20,6 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-
 - script: : |
     npm run test
   displayName: 'run unit tests'
