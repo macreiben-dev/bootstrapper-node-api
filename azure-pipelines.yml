@@ -27,5 +27,12 @@ steps:
 
 - script: |
     cd src
-    npm run test
-  displayName: 'run unit tests'
+    npm run test:coverage
+  displayName: 'run unit tests with coverage'
+
+- task: PublishCodeCoverageResults@1
+  inputs:
+    codeCoverageTool: 'Cobertura'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/lcov.info'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/coverage'
+    failIfCoverageEmpty: false
