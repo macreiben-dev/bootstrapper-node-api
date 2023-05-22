@@ -25,12 +25,12 @@ let users = [
 app.use(express.json());
 
 // Route for fetching all users
-app.get('/users', (req, res) => {
+app.get('api/users', (req, res) => {
     res.json(users);
 });
 
 // Route for creating a new user
-app.post('/users', (req, res) => {
+app.post('api/users', (req, res) => {
     const { id, name } = req.body;
     const newUser = { id, name };
     users.push(newUser);
