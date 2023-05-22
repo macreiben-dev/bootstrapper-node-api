@@ -44,8 +44,6 @@ steps:
     includeRootFolder: false
     archiveFile: '$(System.DefaultWorkingDirectory)/output/archive-api.zip'
 
-
-appendCommitMessageToRunName:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifact'
   inputs:
