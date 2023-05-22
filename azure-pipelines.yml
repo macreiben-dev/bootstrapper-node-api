@@ -32,7 +32,7 @@ steps:
 
 - task: PublishCodeCoverageResults@1
   inputs:
-    codeCoverageTool: 'Cobertura'
+    codeCoverageTool: 'JaCoCo'
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/lcov.info'
     reportDirectory: '$(System.DefaultWorkingDirectory)/coverage/lcov-report'
     pathToSource: '$(System.DefaultWorkingDirectory)/src'
