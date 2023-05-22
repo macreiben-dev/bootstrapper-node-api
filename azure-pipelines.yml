@@ -40,12 +40,15 @@ steps:
   displayName: 'Create artifact archive'
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)/dist'
+    archiveType: 'zip'
     includeRootFolder: false
+    archiveFile: '$(System.DefaultWorkingDirectory)/output/archive-api.zip'
+
 
 appendCommitMessageToRunName:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifact'
   inputs:
-    PathtoPublish: '$(System.DefaultWorkingDirectory)/dist'
+    PathtoPublish: '$(System.DefaultWorkingDirectory)/output'
     ArtifactName: 'distrib-api'
     publishLocation: 'Container'
