@@ -36,7 +36,13 @@ steps:
     summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/cobertura-coverage.xml'
     pathToSource: '$(System.DefaultWorkingDirectory)/src'
     failIfCoverageEmpty: true
+- task: ArchiveFiles@2
+  displayName: 'Create artifact archive'
+  inputs:
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/dist'
+    includeRootFolder: false
 
+appendCommitMessageToRunName:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish artifact'
   inputs:
