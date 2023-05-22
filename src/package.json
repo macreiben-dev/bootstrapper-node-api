@@ -9,7 +9,8 @@
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "start": "node app.js",
-    "build:prod": "webpack --mode production --entry ./app.js --output-path ../dist --config webpack.config.prod.js"
+    "build:prod": "webpack --entry ./app.js --output-path ../dist --config webpack.config.prod.js",
+    "build:dev": "webpack --entry ./app.js --output-path ../dist --config webpack.config.dev.js"
   },
   "repository": {
     "type": "git",

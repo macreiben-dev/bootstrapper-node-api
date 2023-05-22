@@ -1,7 +1,18 @@
 import express from 'express'
 
+// ----------------------------------------------
+// Bootstrapping the server
+
+let defaultServerPort = 3000;
+
+if (GLOBAL_SERVER_PORT) {
+    defaultServerPort = GLOBAL_SERVER_PORT
+}
+
 const app = express();
-const port = 3000;
+const port = defaultServerPort;
+
+// ---------------------------------------------
 
 // Sample data
 let users = [
