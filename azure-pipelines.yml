@@ -33,6 +33,7 @@ steps:
 - task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: 'Cobertura'
-    summaryFileLocation: 'coverage/lcov.info'
-    reportDirectory: 'coverage/lcov-report'
+    summaryFileLocation: '$(System.DefaultWorkingDirectory)/coverage/lcov.info'
+    reportDirectory: '$(System.DefaultWorkingDirectory)/coverage/lcov-report'
+    pathToSource: '$(System.DefaultWorkingDirectory)/src'
     failIfCoverageEmpty: true
